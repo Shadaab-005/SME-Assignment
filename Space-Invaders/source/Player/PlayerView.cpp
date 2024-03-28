@@ -10,7 +10,7 @@ namespace Player
 	using namespace Global;
 	using namespace UI::UIElement;
 
-	PlayerView::PlayerView() { createUIElements(); }
+	PlayerView::PlayerView() { createUIElements();}
 
 	PlayerView::~PlayerView() { destroy(); }
 

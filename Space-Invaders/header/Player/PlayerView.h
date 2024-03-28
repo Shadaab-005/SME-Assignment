@@ -1,13 +1,16 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "../../header/UI/UIElement/ImageView.h"
-#include "../../header/Player/PlayerController.h"
+//#include "../../header/Player/PlayerController.h"
 
 namespace Player
 {
+    class PlayerController;
+
     class PlayerView
     {
     private:
+        
         const sf::String player_texture_path = "assets/textures/player_ship.png";
 
     	const float player_sprite_width = 60.f;
@@ -15,12 +18,12 @@ namespace Player
 
         PlayerController* player_controller;
         UI::UIElement::ImageView* player_image;
-
+        
         void createUIElements();
         void initializeImage();
 
         void destroy();
-
+        
     public:
         PlayerView();
         ~PlayerView();

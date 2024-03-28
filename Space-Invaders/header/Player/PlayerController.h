@@ -2,8 +2,11 @@
 #include <SFML/Graphics.hpp>
 #include "../Collision/ICollider.h"
 #include "../../header/Powerup/PowerupConfig.h"
+
 #include "../../header/Player/PlayerModel.h"
+
 #include "../../header/Player/PlayerView.h"
+
 
 namespace Player
 {
@@ -17,8 +20,9 @@ namespace Player
         float elapsed_fire_duration;
         float elapsed_freez_duration;
 
-        PlayerView* player_view;
         PlayerModel* player_model;
+        PlayerView* player_view;
+
 
         void processPlayerInput();
         void moveLeft();

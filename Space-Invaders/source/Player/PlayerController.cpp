@@ -10,6 +10,9 @@
 #include "../../header/Main/GameService.h"
 #include "../../header/Gameplay/HighScore.h"
 
+
+
+
 namespace Player
 {
 	using namespace Global;
@@ -200,8 +203,10 @@ namespace Player
 		if (event_service->pressedRightArrowKey() || event_service->pressedDKey()) 
 			moveRight();
 
-		//if (event_service->pressedLeftMouseButton()) 
-		//	processBulletFire();
+		if (event_service->pressedLeftMouseButton()) {
+			//processBulletFire();
+		}
+			
 	}
 
 	void PlayerController::moveLeft()
